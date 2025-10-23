@@ -13,6 +13,7 @@ public class PrintedBook extends Title {
         this.copies = copies;
     }
 
+    @Override
     protected double calculatePoints(){
         return pages * convertLiteratureType() * copies;
     }
