@@ -11,14 +11,13 @@ public class LibraryRoyaltyCalculator {
         PrintedBook celestinePrint = new PrintedBook("Celestine", "SKØN", 166, 140);
         olgaRavn.addTitle(celestinePrint);
 
-        AudioBook celestineAudio = new AudioBook("Celestine", "SKØN", 192, 140);
+        AudioBook celestineAudio = new AudioBook("Celestine (Audio)", "SKØN", 192, 140);
         olgaRavn.addTitle(celestineAudio);
 
-        PrintedBook deAnsatte = new PrintedBook("De Ansatte", "Skøn", 136, 236);
+        PrintedBook deAnsatte = new PrintedBook("De Ansatte", "SKØN", 136, 236);
         olgaRavn.addTitle(deAnsatte);
 
         System.out.println(olgaRavn.calculateRoyalties());
-
         olgaRavn.RoyaltyPerTitle();
     }
 }
