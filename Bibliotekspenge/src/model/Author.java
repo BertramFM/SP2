@@ -22,13 +22,13 @@ public class Author {
         return Math.round(sum * 100.0) / 100.0;
     }
 
-    public void RoyaltyPerTitle(){
-        System.out.println("Royalty for title(r) af: " + this.name);
-        for (Title title : titles){
-            double Royalty = (Math.round(title.calculateRoyalty() * 100.0) / 100.0);
-            System.out.println(title.getTitle() + ": " + Royalty + "kr.");
-        }
-    }
+//    public void RoyaltyPerTitle(){
+//        System.out.println("Royalty for title(r) af: " + this.name);
+//        for (Title title : titles){
+//            double Royalty = (Math.round(title.calculateRoyalty() * 100.0) / 100.0);
+//            System.out.println(title.getTitle() + ": " + Royalty + "kr.");
+//        }
+//    }
 
     public String getName() {
         return name;

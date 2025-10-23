@@ -12,16 +12,25 @@ public class EBook extends NetTitle {
         this.illustrated = illustrated;
     }
 
+    @Override
+    protected double calculatePoints() {
+        double calculatedPages = calculatedPages();
+        return calculateNetPoints(calculatedPages) ;
+    }
+
     private double calculatedPages(){
         double pages = (characters / 1800.0) + 20;
         if (illustrated){
-            pages = pages * 1.1; // Tilføjer 10%
+            pages = pages * 1.1; // Tilføjer 10% hvis illustreret
         }
         return pages;
     }
 
-    @Override
-    protected double calculatePoints() {
-        return 0;
+    public int getCharacters() {
+        return characters;
+    }
+
+    public boolean isIllustrated() {
+        return illustrated;
     }
 }

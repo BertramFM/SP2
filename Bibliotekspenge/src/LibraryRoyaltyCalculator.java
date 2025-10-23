@@ -6,6 +6,7 @@ public class LibraryRoyaltyCalculator {
 
     public static void main(String[] args) {
 
+        System.out.println("== FYSISKE TITLER ==");
         Author olgaRavn = new Author("Olga Ravn");
 
         // Bog 1
@@ -20,10 +21,23 @@ public class LibraryRoyaltyCalculator {
         olgaRavn.addTitle(deAnsatte);
 
         // Kalder metode til at printe alle tiler i arraylist med indtjening inkluderet.
-        olgaRavn.RoyaltyPerTitle();
+//        olgaRavn.RoyaltyPerTitle();
 
         // Udskriver den samlede fortjeneste på alle titler.
-        System.out.println(olgaRavn.getName() + " har på " + olgaRavn.getArraySize() +
-                " title(r) tjent: " + olgaRavn.calculateRoyalties() + "kr");
+        printRoyalties(olgaRavn);
+
+
+    }
+
+    private static void printRoyalties(Author author) {
+        double royalties = author.calculateRoyalties();
+        System.out.println(author.getName() + " har på " + author.getArraySize() +
+                " title(r) tjent: " + author.calculateRoyalties() + "kr");
+
+        System.out.println("Royalty for title(r):");
+        for (Title title : author.getTitles()) {
+            double Royalty = (Math.round(title.calculateRoyalty() * 100.0) / 100.0);
+            System.out.println(title.getTitle() + ": " + Royalty + "kr.");
+        }
     }
 }
