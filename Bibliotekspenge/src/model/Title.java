@@ -32,4 +32,11 @@ public abstract class Title {
         }
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getLiteratureType() {
+        return literatureType;
+    }
 }

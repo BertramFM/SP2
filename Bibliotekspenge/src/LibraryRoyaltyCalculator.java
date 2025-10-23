@@ -17,6 +17,9 @@ public class LibraryRoyaltyCalculator {
         PrintedBook deAnsatte = new PrintedBook("De Ansatte", "Skøn", 136, 236);
         olgaRavn.addTitle(deAnsatte);
 
+//        System.out.println(olgaRavn.calculateRoyalties());
+//        System.out.println(celestinePrint.calculateRoyalty());
 
+        olgaRavn.RoyaltyPerTitle();
     }
 }
