@@ -20,6 +20,7 @@ public class LibraryRoyaltyCalculator {
 
         // Kalder metode til at printe alle tiler i arraylist med indtjening inkluderet.
         olgaRavn.RoyaltyPerTitle();
+
         // Udskriver den samlede fortjeneste på alle titler.
         System.out.println(olgaRavn.getName() + " har på " + olgaRavn.getArraySize() +
                 " title(r) tjent: " + olgaRavn.calculateRoyalties() + "kr");
