@@ -15,10 +15,18 @@ public class Author {
     }
 
     public double calculateRoyalties(){
-        return
+        double sum = 0.0;
+        for (Title title : titles){
+            sum += title.calculateRoyalty();
+        }
+        return Math.round(sum * 100.0) / 100.0;
     }
 
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Title> getTitles() {
+        return titles;
     }
 }

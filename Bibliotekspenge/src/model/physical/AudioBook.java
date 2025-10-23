@@ -13,7 +13,15 @@ public class AudioBook extends Title {
         this.copies = copies;
     }
 
-    public double calculatePoints(){
+    protected double calculatePoints(){
         return (durationInMinutes * 0.5) * convertLiteratureType() * copies;
+    }
+
+    public int getDurationInMinutes() {
+        return durationInMinutes;
+    }
+
+    public int getCopies() {
+        return copies;
     }
 }

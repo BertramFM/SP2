@@ -13,8 +13,15 @@ public class PrintedBook extends Title {
         this.copies = copies;
     }
 
-    public double calculatePoints(){
+    protected double calculatePoints(){
         return pages * convertLiteratureType() * copies;
     }
 
+    public int getPages() {
+        return pages;
+    }
+
+    public int getCopies() {
+        return copies;
+    }
 }
