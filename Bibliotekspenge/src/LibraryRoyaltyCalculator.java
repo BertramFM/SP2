@@ -1,6 +1,6 @@
-import model.Author;
-import model.physical.AudioBook;
-import model.physical.PrintedBook;
+import model.*;
+import model.physical.*;
+import model.digital.*;
 
 public class LibraryRoyaltyCalculator {
 
@@ -10,6 +10,7 @@ public class LibraryRoyaltyCalculator {
 
         // Bog 1
         PrintedBook celestinePrint = new PrintedBook("Celestine", "SKØN", 166, 140);
+
         olgaRavn.addTitle(celestinePrint);
         // Bog 2
         AudioBook celestineAudio = new AudioBook("Celestine (Audio)", "SKØN", 192, 140);
