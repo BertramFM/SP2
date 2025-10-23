@@ -23,7 +23,7 @@ public class Author {
     }
 
     public void RoyaltyPerTitle(){
-        System.out.println("Royalty for hver title af: " + this.name);
+        System.out.println("Royalty for title(r) af: " + this.name);
         for (Title title : titles){
             double Royalty = (Math.round(title.calculateRoyalty() * 100.0) / 100.0);
             System.out.println(title.getTitle() + ": " + Royalty + "kr.");
