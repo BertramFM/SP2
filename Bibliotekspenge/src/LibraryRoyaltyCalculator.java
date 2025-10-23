@@ -1,4 +1,4 @@
-import model.*;
+import model.Author;
 import model.physical.AudioBook;
 import model.physical.PrintedBook;
 

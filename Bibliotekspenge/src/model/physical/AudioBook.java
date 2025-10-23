@@ -16,12 +16,4 @@ public class AudioBook extends Title {
     protected double calculatePoints(){
         return (durationInMinutes * 0.5) * convertLiteratureType() * copies;
     }
-
-    public int getDurationInMinutes() {
-        return durationInMinutes;
-    }
-
-    public int getCopies() {
-        return copies;
-    }
 }
