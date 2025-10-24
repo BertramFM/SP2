@@ -12,8 +12,8 @@ public class EAudioBook extends NetTitle {
 
     @Override
     protected double calculatePoints() {
-        double calculatedDuretion = durationInMinutes / 2.0;
-        return calculateNetPoints(calculatedDuretion);
+        double calculatedDuration = durationInMinutes / 2.0;
+        return calculateNetPoints(calculatedDuration);
     }
 
     public int getDurationInMinutes() {
